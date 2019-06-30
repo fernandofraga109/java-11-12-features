@@ -1,4 +1,4 @@
-package main.net.java.examples.var;
+package main.net.java.examples.vars;
 
 
 import java.io.*;
@@ -44,7 +44,6 @@ public class Example {
         //good usages
         //InternationalCustomerOrderProcessor<AnonymousCustomer, SimpleOrder<Book>> orderProcessor = createInternationalOrderProcessor(customer, order);
         //var orderProcessor = createInternationalOrderProcessor(customer, order);
-
 
 
     }
