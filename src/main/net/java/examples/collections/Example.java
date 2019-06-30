@@ -1,4 +1,4 @@
-package main.net.java.examples.collecitions;
+package main.net.java.examples.collections;
 
 import java.util.*;
 import java.util.stream.Collectors;
