@@ -2,7 +2,7 @@ package main.net.java.examples.optionals;
 
 import java.util.Optional;
 
-public class Example {
+public class OptionalMethods {
 
     public static void main(String[] args) {
 

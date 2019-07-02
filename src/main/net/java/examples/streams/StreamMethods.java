@@ -5,7 +5,7 @@ import java.util.Objects;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-public class Example {
+public class StreamMethods {
 
         public static void main(String[] args) {
 

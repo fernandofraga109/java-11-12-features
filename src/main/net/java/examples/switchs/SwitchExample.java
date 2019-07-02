@@ -1,7 +1,7 @@
 package main.net.java.examples.switchs;
 
 
-public class Example {
+public class SwitchExample {
 
     private PortType replaceSimpleSwitch(int port) {
         PortType type;

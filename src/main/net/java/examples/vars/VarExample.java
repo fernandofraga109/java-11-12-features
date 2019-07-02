@@ -5,7 +5,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Example {
+public class VarExample {
 
     public static void main(String[] args) {
 
