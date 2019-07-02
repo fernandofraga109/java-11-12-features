@@ -1,6 +1,5 @@
 package main.net.java.examples.collections;
 
-import java.util.*;
 import java.util.stream.Collectors;
 
 public class Example {
