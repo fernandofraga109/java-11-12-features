@@ -8,7 +8,7 @@ public class SwitchExample {
         switch (port) {
             case 20:
                 type = PortType.FTP;
-                break;;
+                break;
             case 80:
             case 8080:
                 type = PortType.HTTP;
