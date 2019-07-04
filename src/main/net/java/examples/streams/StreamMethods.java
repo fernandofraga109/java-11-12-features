@@ -9,13 +9,15 @@ public class StreamMethods {
 
         public static void main(String[] args) {
 
-            var programmingLanguages = List.of("java", "php", "python", "c++");
+            var programmingLanguages = List.of("java", "c++", "php", "python", "scala");
 
             //TAKE WHILE
             programmingLanguages.stream()
                     .filter(Objects::nonNull)
                     .takeWhile(s -> s.length() < 5)
                     .forEach(System.out::println);
+
+            System.out.println();
 
             //DROP WHILE
             programmingLanguages.stream()
@@ -25,9 +27,9 @@ public class StreamMethods {
 
 
             //Predicate.not
-            /*programmingLanguages.stream()
+            programmingLanguages.stream()
                     .filter(s -> !s.isEmpty())
-                    .collect(Collectors.toList());*/
+                    .collect(Collectors.toList());
 
             programmingLanguages.stream()
                     .filter(Predicate.not(String::isEmpty))

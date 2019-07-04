@@ -6,7 +6,8 @@ public class OptionalMethods {
 
     public static void main(String[] args) {
 
-
+        Optional str = Optional.empty();
+        str.isEmpty();
     }
 
     private String useOptionalPropertyOrElse(Optional<String> anOptional) {
@@ -14,9 +15,9 @@ public class OptionalMethods {
         /*if (anOptional.isPresent()) {
             return anOptional.get();
         }
-        return "";
-        */
-        return anOptional.orElse("");
+        return "";*/
+
+        return anOptional.orElse("other thing!");
     }
 
     private Optional<String> useOptionalOr(Optional<String> firstOptional, Optional<String> secondOptional) {
@@ -24,7 +25,7 @@ public class OptionalMethods {
             return firstOptional;
         } else {
             return secondOptional;
-        } */
+        }*/
         return firstOptional.or(() -> secondOptional);
     }
 
@@ -35,8 +36,7 @@ public class OptionalMethods {
         } else {
             System.out.println(anOptional.get());
         }
-
-        anOptional.ifPresentOrElse(System.out::println, () -> System.out.println("Nothing found!") );
+        anOptional.ifPresentOrElse(System.out::println, () -> System.out.println("Nothing found!"));
     }
 
 }

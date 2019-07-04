@@ -3,6 +3,7 @@ package main.net.java.examples.switchs;
 
 public class SwitchExample {
 
+    @Deprecated(forRemoval = true)
     private PortType replaceSimpleSwitch(int port) {
         PortType type;
         switch (port) {
@@ -21,7 +22,7 @@ public class SwitchExample {
         return type;
     }
 
-    private PortType newSwitch(int port) {
+  /*  private PortType newSwitch(int port) {
         PortType type = switch (port) {
             case 20 -> PortType.FTP;
             case 80, 8080 -> PortType.HTTP;
@@ -29,7 +30,7 @@ public class SwitchExample {
             default -> PortType.UNKNOWN;
         };
         return type;
-    }
+    }*/
 }
 
 enum PortType {
